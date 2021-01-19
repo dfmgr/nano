@@ -39,7 +39,7 @@ brew install nano
 ```shell
 mv -fv "$HOME/.config/nano" "$HOME/.config/nano.bak"
 git clone https://github.com/dfmgr/nano "$HOME/.config/nano"
-ln -sf "$APPDIR/nanorc" "$HOME/.nanorc"
+ln -sf "$DOWNLOADED_TO/nanorc" "$HOME/.nanorc"
 ```
   
 <p align=center>
