@@ -1,3 +1,37 @@
+# nanorc
+#unbind ^K main
+#unbind ^U all
+#unbind ^N main
+#unbind ^Y all
+#unbind M-J main
+#unbind M-T main
+
+bind ^Q exit all
+bind ^S savefile main
+bind ^W writeout main
+bind ^O insert main
+bind ^H help all
+bind ^H exit help
+bind ^F whereis all
+bind ^G findnext all
+bind ^B wherewas all
+bind ^D findprevious all
+bind ^R replace main
+bind M-X flipnewbuffer all
+bind ^X cut all
+bind ^C copy main
+bind ^V paste all
+bind ^P location main
+bind ^A mark main
+#bind ^T gotoline main
+#bind ^T gotodir browser
+#bind ^Y speller main
+#bind M-U undo main
+#bind M-R redo main
+bind ^U undo main
+bind ^E redo main
+set multibuffer
+
 include "~/.config/nano/inc/apacheconf.nanorc"
 include "~/.config/nano/inc/arduino.nanorc"
 include "~/.config/nano/inc/asciidoc.nanorc"
