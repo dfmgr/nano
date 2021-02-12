@@ -1,3 +1,6 @@
+# Include nanorc files
+include ~/.config/nano/inc/*
+
 #  Set options
 set quotestr "^([ 	]*([!#%:;>|}]|//))+"
 set matchbrackets "(<[{)>]}"
@@ -5,7 +8,7 @@ set brackets ""')>]}"
 set constantshow
 set emptyline
 set historylog
-set linenumbers
+#set linenumbers
 set magic
 set positionlog
 set showcursor
@@ -17,7 +20,7 @@ set multibuffer
 
 # Set global syntax
 extendsyntax python tabgives "    "
-extendsyntax makefile tabgives "	"
+extendsyntax Makefile tabgives "	"
 
 # Set key bindings
 #unbind ^K main
@@ -28,6 +31,7 @@ extendsyntax makefile tabgives "	"
 #unbind M-T main
 unbind ^H all
 unbind ^G all
+unbind F11 all
 
 bind ^Q exit all
 bind ^S savefile main
@@ -40,19 +44,18 @@ bind ^G findnext all
 bind ^B wherewas all
 bind ^D findprevious all
 bind ^R replace main
-bind M-X flipnewbuffer all
 bind ^X cut all
 bind ^C copy main
 bind ^V paste all
-#bind ^P location main
+bind ^P location main
 bind ^A mark main
-#bind ^T gotoline main
-#bind ^T gotodir browser
-#bind ^Y speller main
-#bind M-U undo main
-#bind M-R redo main
+bind ^L gotoline main
+bind ^T gotodir browser
+bind ^Y speller main
 bind ^U undo main
 bind ^E redo main
 
-# Include nanorc files
-include "~/.config/nano/inc/*"
+#bind M-U undo main
+#bind M-R redo main
+bind M-X flipnewbuffer all
+
