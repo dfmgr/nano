@@ -6,7 +6,6 @@ set quotestr "^([ 	]*([!#%:;>|}]|//))+"
 set matchbrackets "(<[{)>]}"
 set brackets ""')>]}"
 set constantshow
-set emptyline
 set historylog
 set magic
 set positionlog
@@ -25,8 +24,6 @@ unbind F11 all
 unbind ^G all
 
 bind ^Q exit all
-bind ^H help main
-bind ^H exit help
 bind ^S savefile main
 bind ^W writeout main
 bind ^O insert main
@@ -35,9 +32,9 @@ bind ^G findnext all
 bind ^B wherewas all
 bind ^D findprevious all
 bind ^R replace main
-bind ^X cut all
+bind ^X cut main
 bind ^C copy main
-bind ^V paste all
+bind ^V paste main
 bind ^P location main
 bind ^A mark main
 bind ^L gotoline main
@@ -45,6 +42,5 @@ bind ^T gotodir browser
 bind ^K speller main
 bind ^U undo main
 bind ^E redo main
-bind ^N flipnewbuffer all
 bind ^/ comment main
 
