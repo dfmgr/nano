@@ -8,12 +8,10 @@ set brackets ""')>]}"
 set constantshow
 set emptyline
 set historylog
-#set linenumbers
 set magic
 set positionlog
 set showcursor
 set smarthome
-set speller "aspell -x -c"
 set tabsize 4
 set tabstospaces
 set multibuffer
@@ -23,22 +21,15 @@ extendsyntax python tabgives "    "
 extendsyntax Makefile tabgives "	"
 
 # Set key bindings
-#unbind ^K main
-#unbind ^U all
-#unbind ^N main
-#unbind ^Y all
-#unbind M-J main
-#unbind M-T main
-unbind ^H all
-unbind ^G all
 unbind F11 all
+unbind ^G all
 
 bind ^Q exit all
+bind ^H help main
+bind ^H exit help
 bind ^S savefile main
 bind ^W writeout main
 bind ^O insert main
-bind ^H help all
-bind ^H exit help
 bind ^F whereis all
 bind ^G findnext all
 bind ^B wherewas all
@@ -51,11 +42,9 @@ bind ^P location main
 bind ^A mark main
 bind ^L gotoline main
 bind ^T gotodir browser
-bind ^Y speller main
+bind ^K speller main
 bind ^U undo main
 bind ^E redo main
-
-#bind M-U undo main
-#bind M-R redo main
-bind M-X flipnewbuffer all
+bind ^N flipnewbuffer all
+bind ^/ comment main
 
