@@ -5,7 +5,7 @@ text editor which aims to introduce a simple interface and intuitive command opt
 Automatic install/update:
 
 ```shell
-bash -c "$(curl -LSs https://github.com/dfmgr/nano/raw/master/install.sh)"
+bash -c "$(curl -LSs https://github.com/dfmgr/nano/raw/main/install.sh)"
 ```
 
 Manual install:
