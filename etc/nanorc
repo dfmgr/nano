@@ -7,11 +7,10 @@ set matchbrackets "(<[{)>]}"
 set brackets ""')>]}"
 set constantshow
 set historylog
-set magic
 set positionlog
 set showcursor
 set smarthome
-set tabsize 4
+set tabsize 2
 set tabstospaces
 set multibuffer
 
@@ -23,6 +22,7 @@ extendsyntax Makefile tabgives "	"
 unbind F11 all
 unbind ^G all
 
+# ^ is control key
 bind ^Q exit all
 bind ^S savefile main
 bind ^W writeout main
@@ -43,3 +43,4 @@ bind ^K speller main
 bind ^U undo main
 bind ^E redo main
 bind ^/ comment main
+
