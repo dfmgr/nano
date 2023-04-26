@@ -43,4 +43,3 @@ bind ^K speller main
 bind ^U undo main
 bind ^E redo main
 bind ^/ comment main
-
